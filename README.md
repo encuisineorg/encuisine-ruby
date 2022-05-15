@@ -15,6 +15,9 @@ If bundler is not being used to manage dependencies, install the gem by executin
 ```ruby
 require 'encuisine'
 
+# List all recipes
+Encuisine::Recipe.all
+
 # Search a recipe
 Encuisine::Recipe.search("Smoothie")
 

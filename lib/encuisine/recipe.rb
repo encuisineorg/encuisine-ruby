@@ -3,6 +3,10 @@
 module Encuisine
   class Recipe
     class << self
+      def all
+        response = Connection.json.get("#{BASE_URL}/api/v1/recipes")
+      end
+
       def get(id)
         if id
           response = Connection.json.get("#{BASE_URL}/api/v1/recipes/#{id}")

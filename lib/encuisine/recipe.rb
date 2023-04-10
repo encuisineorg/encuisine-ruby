@@ -15,7 +15,7 @@ module Encuisine
 
       def search(query)
         if query
-          response = Connection.json.post("#{BASE_URL}/api/v1/recipes/searches") do |request|
+          response = Connection.json.get("#{BASE_URL}/api/v1/recipes") do |request|
             request.params["q"] = query
           end
         end

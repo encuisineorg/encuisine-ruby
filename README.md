@@ -26,6 +26,15 @@ Encuisine::Recipe.get(id)
 
 # Create a recipe
 Encuisine::Recipe.create(json)
+
+# List all foods
+Encuisine::Food.all
+
+# Search a food
+Encuisine::Food.search("Carotte")
+
+# Get a food
+Encuisine::Food.get(id)
 ```
 
 ## Development
